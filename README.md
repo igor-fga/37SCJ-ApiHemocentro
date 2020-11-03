@@ -13,7 +13,7 @@ Projeto criado com objetivo de aproximar doadores de sangue e bancos de sangue.
   
   2- Utilizar uma IDE para execução dos projetos de API desenvolvida em Java. Ex. IntelliJ ou Eclipse.
   
-  3- Utilizar uma IDE para execução do projeto WebApp em React. Ex. VS Code.
+  3- Utilizar uma IDE para execução do projeto WebApp desenvolvida em React. Ex. VS Code.
   
   ---
 ## Topologia
