@@ -1,7 +1,7 @@
 # 37SCJ-ApiHemocentro
 Projeto para disciplina WEBSERVICES &amp; RESTFUL TECHNOLOGIES (FIAP)
 
-A FIAP resolveu criar seu próprio cartão de crédito para ser utilizado pelos alunos e para isso necessita de um sistema para gerenciamento e integração com outras empresas. 
+Projeto criado com objetivo de aproximar doadores de sangue e bancos de sangue. 
 
 ![Imagem Doar](Images/doar.jpg)
 
