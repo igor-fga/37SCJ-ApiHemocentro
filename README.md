@@ -32,7 +32,7 @@ Projeto criado com objetivo de aproximar doadores de sangue e bancos de sangue.
 ## Instruções execução dos projetos
 
 ### 1) Instalação e execução do projeto Api
-Esse projeto tem como objetivo criação, edição, busca e deleção de alunos, criação e busca de transações, e o envio de extrato por aluno.
+Esse projeto tem como objetivo criação, edição, busca e deleção de doadores e bancos de sangue.
 
 - Importar o projeto (Ex. Eclipse)
 
@@ -48,8 +48,8 @@ Esse projeto tem como objetivo criação, edição, busca e deleção de alunos,
   
   6- Os serviços podem ser testados utilizando o swagger no endereço *http://localhost:8081/swagger-ui/index.html*
 
-### 2) Instalação e execução do projeto AutorizadorMock
-Esse projeto tem como objetivo simular uma autorizadora de cartões que recebe as informações de uma transação e devolve uma resposta aprovando ou negando a mesma. A implementação está aceitando qualquer transação recebida.
+### 2) Instalação e execução do projeto WebApp
+Esse projeto tem como objetivo uma aplicação web para inserir e buscar por doadores e bancos de sangue.
 
 - Importar o projeto (Ex. VS Code)
 
