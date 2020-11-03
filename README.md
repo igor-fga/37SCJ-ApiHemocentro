@@ -3,6 +3,9 @@ Projeto para disciplina WEBSERVICES &amp; RESTFUL TECHNOLOGIES (FIAP)
 
 A FIAP resolveu criar seu próprio cartão de crédito para ser utilizado pelos alunos e para isso necessita de um sistema para gerenciamento e integração com outras empresas. 
 
+![Imagem Doar](Images/doar.jpg)
+
+
 ##  Pré-requisitos para execução do projeto
 - Tecnologias necessárias.
 
@@ -15,7 +18,7 @@ A FIAP resolveu criar seu próprio cartão de crédito para ser utilizado pelos 
   ---
 ## Topologia
 
-ToDo
+![Imagem topologia](Images/topologia_doacao.png)
 
 
 ---
