@@ -1,5 +1,4 @@
 # 37SCJ-ApiHemocentro
-Projeto para disciplina WEBSERVICES &amp; RESTFUL TECHNOLOGIES (FIAP)
 
 Projeto criado com objetivo de aproximar doadores de sangue e hemocentros. 
 
