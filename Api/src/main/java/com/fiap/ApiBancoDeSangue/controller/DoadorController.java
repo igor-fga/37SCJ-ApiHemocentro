@@ -13,6 +13,13 @@ import com.fiap.ApiBancoDeSangue.service.IDoadorService;
 
 import io.swagger.v3.oas.annotations.Operation;
 
+import com.fiap.ApiBancoDeSangue.config.ProducerConfig;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.DirectExchange;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("v1/doadores")
@@ -41,6 +48,22 @@ public class DoadorController {
     @Operation(description = "Cria um novo doador")
     @ResponseStatus(HttpStatus.CREATED)
     public DoadorDTO create(@RequestBody DoadorCreateUpdateDTO doadorCreateUpdateDTO) {
+        RabbitAdmin admin = new RabbitAdmin(ProducerConfig.getConnection());
+        Queue queueDoador = new Queue("drone.inf");
+
+        final String exchange = "exchange.drone";
+
+        admin.declareQueue(queueDoador);
+
+        DirectExchange exchangeDoador = new DirectExchange(exchange);
+        admin.declareExchange(exchangeDoador);
+
+        admin.declareBinding(BindingBuilder.bind(queueDoador).to(exchangeDoador).with("inf"));
+
+        RabbitTemplate template = new RabbitTemplate(ProducerConfig.getConnection());
+
+        template.convertAndSend(exchange, "inf", doadorCreateUpdateDTO.getNome() + ";");
+
         return doadorService.create(doadorCreateUpdateDTO);
     }
 
