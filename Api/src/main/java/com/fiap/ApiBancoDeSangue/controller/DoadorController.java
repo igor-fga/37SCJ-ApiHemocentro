@@ -62,7 +62,7 @@ public class DoadorController {
 
         RabbitTemplate template = new RabbitTemplate(ProducerConfig.getConnection());
 
-        template.convertAndSend(exchange, "inf", doadorCreateUpdateDTO.getNome() + ";");
+        template.convertAndSend(exchange, "inf", doadorCreateUpdateDTO.getNome() + ";doador;"+doadorCreateUpdateDTO.getEmail());
 
         return doadorService.create(doadorCreateUpdateDTO);
     }

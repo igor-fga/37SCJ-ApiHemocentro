@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
@@ -39,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604443018864</updated>
       <workItem from="1604443019942" duration="132000" />
+      <workItem from="1607560733126" duration="27000" />
     </task>
     <servers />
   </component>

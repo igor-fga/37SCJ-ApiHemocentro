@@ -54,6 +54,7 @@ public class BancoDeSangueServiceImpl implements IBancoDeSangueService {
         bancoDeSangue.setEndereco(bancoDeSagueCreateUpdateDTO.getEndereco());
         bancoDeSangue.setTelefone(bancoDeSagueCreateUpdateDTO.getTelefone());
         bancoDeSangue.setDeficitSanguineo(bancoDeSagueCreateUpdateDTO.getDeficitSanguineo());
+        bancoDeSangue.setEmail(bancoDeSagueCreateUpdateDTO.getEmail());
 
         BancoDeSangue bancoDeSangueSaved = bancoDeSangueRepository.save(bancoDeSangue);
         return new BancoDeSangueDTO(bancoDeSangueSaved);

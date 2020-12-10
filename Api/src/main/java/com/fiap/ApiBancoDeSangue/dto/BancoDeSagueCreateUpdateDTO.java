@@ -11,6 +11,8 @@ public class BancoDeSagueCreateUpdateDTO {
 
     private String telefone;
 
+    private String email;
+
    private List<String> deficitSanguineo;
 
     public String getNome() {
@@ -44,4 +46,8 @@ public class BancoDeSagueCreateUpdateDTO {
     public void setDeficitSanguineo(List<String> deficitSanguineo) {
         this.deficitSanguineo = deficitSanguineo;
     }
+
+    public String getEmail() {  return email;   }
+
+    public void setEmail(String email) {   this.email = email;  }
 }
