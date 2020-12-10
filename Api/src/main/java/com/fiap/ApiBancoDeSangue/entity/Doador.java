@@ -35,6 +35,9 @@ public class Doador {
     private String Rg;
 
     @Column
+    private String email;
+
+    @Column
     private Boolean ativo;
 
     public Doador() {
@@ -47,7 +50,7 @@ public class Doador {
         this.tiposanguineo = doadorCreateUpdateDTO.getTiposanguineo();
         this.Rg = doadorCreateUpdateDTO.getRg();
         this.ativo = true;
-
+        this.email= doadorCreateUpdateDTO.getEmail();
     }
 
     public Long getId() {
@@ -98,5 +101,8 @@ public class Doador {
         this.ativo = ativo;
     }
 
+    public String getEmail() {   return email;   }
+
+    public void setEmail(String email) {  this.email = email;   }
 }
 

@@ -26,6 +26,9 @@ public class BancoDeSangue {
     @Column
     private String telefone;
 
+    @Column
+    private String email;
+
     @ElementCollection
     private List<String> deficitSanguineo;
 
@@ -41,6 +44,7 @@ public class BancoDeSangue {
         this.telefone = bancoDeSagueCreateUpdateDTO.getTelefone();
         this.deficitSanguineo = bancoDeSagueCreateUpdateDTO.getDeficitSanguineo();
         this.ativo = true;
+        this.email= bancoDeSagueCreateUpdateDTO.getEmail();
     }
 
     public Long getId() {
@@ -90,4 +94,8 @@ public class BancoDeSangue {
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
     }
+
+    public String getEmail() {   return email;   }
+
+    public void setEmail(String email) {  this.email = email;  }
 }

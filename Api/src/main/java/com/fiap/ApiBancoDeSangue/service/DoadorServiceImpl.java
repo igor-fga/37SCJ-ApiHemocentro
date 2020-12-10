@@ -54,6 +54,7 @@ public class DoadorServiceImpl implements IDoadorService {
 		doador.setIdade(doadorCreateUpdateDTO.getIdade());
 		doador.setTiposanguineo(doadorCreateUpdateDTO.getTiposanguineo());
 		doador.setRg(doadorCreateUpdateDTO.getRg());
+		doador.setEmail(doadorCreateUpdateDTO.getEmail());
 
 		Doador doadorSaved = doadorRepository.save(doador);
 		return new DoadorDTO(doadorSaved);

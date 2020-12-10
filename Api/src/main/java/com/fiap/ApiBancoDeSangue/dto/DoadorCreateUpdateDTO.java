@@ -10,6 +10,8 @@ public class DoadorCreateUpdateDTO {
 
     private String Rg;
 
+	private String email;
+
 	public String getNome() {
 		return nome;
 	}
@@ -40,5 +42,9 @@ public class DoadorCreateUpdateDTO {
 
 	public void setRg(String rg) {
 		Rg = rg;
-	}   
+	}
+
+	public String getEmail() {return email;	}
+
+	public void setEmail(String email) {  this.email = email;	}
 }

@@ -12,6 +12,8 @@ public class DoadorDTO {
 
 	private String tiposanguineo;
 
+	private String email;
+
 	private String Rg;
 
 	public DoadorDTO() {
@@ -23,6 +25,7 @@ public class DoadorDTO {
 		this.idade = doador.getIdade();
 		this.tiposanguineo = doador.getTiposanguineo();
 		this.Rg = doador.getRg();
+		this.email= doador.getEmail();
 	}
 
 	public Long getId() {
@@ -64,5 +67,9 @@ public class DoadorDTO {
 	public void setRg(String rg) {
 		Rg = rg;
 	}
+
+	public String getEmail() { return email; 	}
+
+	public void setEmail(String email) {this.email = email;	}
 
 }

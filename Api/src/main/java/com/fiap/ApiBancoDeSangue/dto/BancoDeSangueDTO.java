@@ -17,6 +17,8 @@ public class BancoDeSangueDTO {
 
     private List<String> deficitSanguineo;
 
+    private String email;
+
     public BancoDeSangueDTO() {}
 
     public BancoDeSangueDTO(BancoDeSangue bancoDeSangue) {
@@ -25,6 +27,7 @@ public class BancoDeSangueDTO {
         this.endereco = bancoDeSangue.getEndereco();
         this.telefone = bancoDeSangue.getTelefone();
         this.deficitSanguineo = bancoDeSangue.getDeficitSanguineo();
+        this.email = bancoDeSangue.getEmail();
     }
 
     public Long getId() {
@@ -66,4 +69,8 @@ public class BancoDeSangueDTO {
     public void setDeficitSanguineo(List<String> deficitSanguineo) {
         this.deficitSanguineo = deficitSanguineo;
     }
+
+    public String getEmail() {   return email;    }
+
+    public void setEmail(String email) {   this.email = email;   }
 }
