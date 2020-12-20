@@ -3,10 +3,14 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:~/bancodesanguedb;DB_CLOSE_ON_EXIT=FALSE
-    username: fiap
-    password: fiap
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bancodesanguedb?createDatabaseIfNotExist=TRUE&useTimezone=true&serverTimezone=America/Sao_Paulo
+    username: root
+    password: 123456
   jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
     show-sql: true
-    hibernate:
-      ddl-auto: update
+    properties:
+      hibernate:
+       dialect: org.hibernate.dialect.MySQL57Dialect
