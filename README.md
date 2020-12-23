@@ -64,4 +64,4 @@ Esse projeto tem como objetivo uma aplicação web para inserir e buscar por doa
 
 ### 3) Video do funcionamento (Loom)
 
-  https://www.loom.com/share/69ee6b3a0d4341b58d82c81556180d60
+  https://www.loom.com/share/21cab273edf34aca9df3b7cf677e4538
