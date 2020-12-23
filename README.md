@@ -62,6 +62,6 @@ Esse projeto tem como objetivo uma aplicação web para inserir e buscar por doa
   
   5- Digitar o comando `npm start`, esse comando irá iniciar aplicação no endereço **http://localhost:3000**.
 
-###3) Link video de funcionamento (Loom)
+### 3) Video do funcionamento (Loom)
 
   https://www.loom.com/share/69ee6b3a0d4341b58d82c81556180d60
